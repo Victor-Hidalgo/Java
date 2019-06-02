@@ -8,6 +8,8 @@ public class stringExercises{
         int position;
         Scanner scan = new Scanner (System.in);
 
+        //ask for Strings before numbers
+
         System.out.println("Enter the String");
 
         phrase = scan.nextLine();
