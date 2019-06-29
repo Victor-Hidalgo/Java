@@ -8,7 +8,10 @@ public class dateOperations{
 
         date.clearCalendar();
         date.setYear(2020);
+        date.setMonth(5);
+        date.setDay(29);
 
-        System.out.println("Rompe este ve " + date.getYear());
+        //System.out.println("Rompe este ve " + date.getYear() + "/" + date.getMonth() + "/" + date.getDay());
+        date.time();
     }
 }
