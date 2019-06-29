@@ -23,4 +23,31 @@ public class dates{
 
         return year;
     }
+
+    public void setMonth(int month){
+
+        this.month = month;
+        cal.set(Calendar.MONTH, month);
+    }
+
+    public int getMonth(){
+
+        return month;
+    }
+
+    public void setDay(int day){
+
+        this.day = day;
+        cal.set(Calendar.DATE, day);
+    }
+
+    public int getDay(){
+
+        return day;
+    }
+
+    public void time (){
+
+        System.out.println(cal.getTime());
+    }
 }
