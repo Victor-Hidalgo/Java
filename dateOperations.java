@@ -11,7 +11,11 @@ public class dateOperations{
         date.setMonth(5);
         date.setDay(29);
 
-        //System.out.println("Rompe este ve " + date.getYear() + "/" + date.getMonth() + "/" + date.getDay());
+        System.out.println("Date: " + date.getYear() + "/" + date.getMonth() + "/" + date.getDay());
         date.time();
+        date.timeZone("America/New_York");
+
+        //ask the user for the time zone.
+
     }
 }
