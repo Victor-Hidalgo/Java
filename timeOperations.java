@@ -8,6 +8,7 @@ public class timeOperations{
 
     Calendar cal = Calendar.getInstance();
     int requestedDay = 2, requestedMonth = 7, requestedYear = 2019;
+    LocalTime time = LocalTime.now();
     System.out.println();
 
     //it is important to add 1 as months start from zero.
@@ -25,6 +26,8 @@ public class timeOperations{
         System.exit(0);
     }
 
+    //date must be entered in format dd mm yyyy
+
     else{
 
         requestedDay = Integer.parseInt(args[0]);
@@ -37,6 +40,7 @@ public class timeOperations{
 	 String firstDay = ym.atDay(requestedDay).getDayOfWeek().name();
 	 //String lastDay = ym.atEndOfMonth().getDayOfWeek().name();
 	 System.out.println();
-	 System.out.println(firstDay);
+     System.out.println("The date input is " + firstDay);
+     System.out.println("Local time: " + time);
     }
 }
