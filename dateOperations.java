@@ -32,6 +32,7 @@ public class dateOperations{
         //System.out.println("Date: " + date.getYear() + "/" + date.getMonth() + "/" + date.getDay());
 
         //print date and time
+        System.out.print("\nDate: ");
         date.time();
 
         //same date last year
