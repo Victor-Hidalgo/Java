@@ -1,3 +1,4 @@
+import java.time.LocalTime;
 import java.util.*;
 
 public class dates{
@@ -7,6 +8,7 @@ public class dates{
     private int year = 2019;
     private int month = 0;
     private int day = 1;
+    private LocalTime timeNow;
 
     public void clearCalendar(){
 
@@ -27,7 +29,7 @@ public class dates{
     public void setMonth(int month){
 
         this.month = month;
-        cal.set(Calendar.MONTH, month);
+        cal.set(Calendar.MONTH, month-1);
     }
 
     public int getMonth(){
@@ -46,12 +48,12 @@ public class dates{
         return day;
     }
 
-    public void time (){
+    public void time(){
 
         System.out.println(cal.getTime());
     }
 
-    public void timeZone (String city){
+    public void timeZone(String city){
 
         //get a new calendar instance as it could have been cleared beforehand
 
