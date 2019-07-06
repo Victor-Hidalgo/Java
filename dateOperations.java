@@ -7,7 +7,7 @@ public class dateOperations{
 
         dates date = new dates();
         Scanner scan = new Scanner (System.in);
-        String strZone = " ";
+        String strZone = "";
         int requestedDay = 3, requestedMonth = 7, requestedYear = 2019;
 
         date.clearCalendar();
