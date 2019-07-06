@@ -64,5 +64,4 @@ public class dates{
         System.out.println("Time in " + city +" "+ cal.get(Calendar.HOUR_OF_DAY) + ":"
         + cal.get(Calendar.MINUTE)+":"+cal.get(Calendar.SECOND));
     }
-
 }
