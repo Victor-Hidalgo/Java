@@ -9,7 +9,7 @@ public class BasicMethod{
 
         if(str.length() % 2 == 0){
 
-            mid = str.charAt(str.length() / 2) + "" + str.charAt((str.length() / 2) -1);
+            mid = str.charAt(str.length() / 2) + "" + str.charAt((str.length() / 2) - 1);
         }
 
         else{
