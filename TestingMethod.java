@@ -15,6 +15,5 @@ public class TestingMethod{
         System.out.println("\nMiddle character(s): " + test.middleCharacter(example));
 
         scan.close();
-
     }
 }
