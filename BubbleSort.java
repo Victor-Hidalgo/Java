@@ -21,7 +21,31 @@ class Result {
     public static void countSwaps(List<Integer> a) {
     // Write your code here
 
+        int i = 0;
+        int j = 0;
+        int tmp;
+        int tally = 0;
         
+        while(i < a.size()){
+            
+            while(j < a.size() - 1){
+                
+                if(a.get(j) > a.get(j + 1)){
+                    
+                    tmp = a.get(j);
+                    a.set(j, a.get(j + 1));
+                    a.set(j + 1, tmp);
+                    tally++;
+                }
+                j++;
+            }
+            j = 0;
+            //System.out.println("This is " + a.get(i));
+            i++;
+        }
+        
+        System.out.println("Array is sorted in " + tally + " swaps." +
+        "\nFirst Element: " + a.get(0) + "\nLast Element: " + a.get(a.size() - 1));
     }
 
 }
