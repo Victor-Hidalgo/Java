@@ -23,14 +23,14 @@ class Result {
     // Write your code here
         
         int deletions = 0;
-        StringBuffer sbf = new StringBuffer (s);
+        //StringBuffer sbf = new StringBuffer (s);
         int i = 0;
         
-        while(i < sbf.length() - 1){
+        while(i < s.length() - 1){
             
-            if(sbf.charAt(i) == sbf.charAt(i + 1)){
+            if(s.charAt(i) == s.charAt(i + 1)){
                 
-                sbf.deleteCharAt(i + 1);
+                //sbf.deleteCharAt(i + 1);
                 deletions++;
             }
             i++;
